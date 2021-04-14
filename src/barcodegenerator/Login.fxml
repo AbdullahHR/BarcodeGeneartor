@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="259.0" prefWidth="523.0" stylesheets="@../css/styels.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="barcodegenerator.FXMLDocumentController">
+   <children>
+      <Label fx:id="titlelbl" layoutX="190.0" layoutY="31.0" text="Barcode Generator" />
+      <Label layoutX="83.0" layoutY="119.0" text="Email" />
+      <Label layoutX="85.0" layoutY="171.0" text="Password" />
+      <Label fx:id="outlbl" layoutX="83.0" layoutY="88.0" prefHeight="21.0" prefWidth="357.0" textFill="RED" />
+      <TextField fx:id="emailtxt" layoutX="179.0" layoutY="120.0" prefHeight="31.0" prefWidth="261.0" promptText="Please Enter Your Email" />
+      <Button layoutX="201.0" layoutY="210.0" mnemonicParsing="false" onAction="#login" prefHeight="31.0" prefWidth="99.0" text="Login" />
+      <PasswordField fx:id="passtxt" layoutX="179.0" layoutY="166.0" prefHeight="31.0" prefWidth="261.0" promptText="Please Enter Your Password" />
+      <ImageView fitHeight="69.0" fitWidth="67.0" layoutX="94.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/preview.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

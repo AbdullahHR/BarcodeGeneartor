@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="412.0" prefWidth="600.0" stylesheets="@../css/styels.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="barcodegenerator.GenerateController">
+   <children>
+      <Label fx:id="titlelbl" layoutX="259.0" layoutY="54.0" prefHeight="32.0" prefWidth="234.0" text="Generate Barcode" />
+      <ImageView fitHeight="89.0" fitWidth="91.0" layoutX="152.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/preview.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="556.0" layoutY="10.0" mnemonicParsing="false" onAction="#logout">
+         <graphic>
+            <ImageView fitHeight="15.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/on-off-button.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#back">
+         <graphic>
+            <ImageView fitHeight="34.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label layoutX="119.0" layoutY="159.0" text="User ID:" />
+      <Label layoutX="119.0" layoutY="200.0" text="Barcode Type:" />
+      <Label layoutX="119.0" layoutY="241.0" text="Barcode Category:" />
+      <Label layoutX="119.0" layoutY="281.0" text="Barcode Description:" />
+      <ChoiceBox id="input" fx:id="categorycb" layoutX="259.0" layoutY="236.0" prefHeight="31.0" prefWidth="234.0" />
+      <ChoiceBox id="input" fx:id="typecb" layoutX="259.0" layoutY="195.0" prefHeight="31.0" prefWidth="234.0" />
+      <TextField id="input" fx:id="useridtxt" layoutX="259.0" layoutY="154.0" prefHeight="31.0" prefWidth="234.0" promptText="Enter User ID" />
+      <TextField id="input" fx:id="desctxt" layoutX="259.0" layoutY="276.0" prefHeight="31.0" prefWidth="234.0" promptText="Enter a Description for barcode" />
+      <Label layoutX="119.0" layoutY="322.0" text="Barcode Count:" />
+      <ChoiceBox id="input" fx:id="countcb" layoutX="259.0" layoutY="317.0" prefHeight="31.0" prefWidth="234.0" />
+      <Button layoutX="239.0" layoutY="367.0" mnemonicParsing="false" onAction="#generate" prefHeight="31.0" prefWidth="122.0" text="Generate" />
+      <Label fx:id="lblout" layoutX="118.0" layoutY="129.0" prefHeight="21.0" prefWidth="364.0" textFill="RED" />
+   </children>
+</AnchorPane>
